@@ -88,6 +88,37 @@ def full?
   end  
 end
   
+def draw?
+  full?&& !won?
+end
+
+def over?
+  won? || draw? || full?
+end
+
+def winner
+  position = won?
+  if position 
+    return @board[position[0]]
+  end
+  return nil
+end
+
+def play
+  puts turn_count
+  until over?do
+    turn
+  end
+  
+  
+  
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  else
+    puts "Cat's Game!"
+  end
+end
+
 
   
 end
