@@ -79,7 +79,10 @@ def won?
       return win_combination
     end
   end
-  
   return false
-  end
+end
+  
+def full?
+  
+  
 end
