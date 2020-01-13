@@ -106,7 +106,7 @@ end
 
 def play
   puts turn_count
-  until over?do
+  until over? do
     turn
   end
   
