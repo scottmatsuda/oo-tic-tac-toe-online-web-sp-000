@@ -19,7 +19,7 @@ class TicTacToe
     return board_position = input_integer - 1
   end
   
-  def move(@board, index, current_player)
+  def move(board, index, current_player)
     board[index] = current_player
   end
 
