@@ -83,6 +83,10 @@ def won?
 end
   
 def full?
+  @board.all? do |piece|
+    piece == "X" || piece == "O"
+  end  
+end
   
   
 end
