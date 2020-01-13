@@ -15,9 +15,12 @@ class TicTacToe
   end
   
   def input_to_index(input)
-  input_integer = input.to_i
-  return board_position = input_integer - 1
+    input_integer = input.to_i
+    return board_position = input_integer - 1
+  end
   
-end
+  def move(index, "X")
+    
+  end
 
 end
