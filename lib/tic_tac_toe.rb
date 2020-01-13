@@ -110,15 +110,11 @@ def play
     turn
   end
   
-  
-  
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
+  if won?
+    puts "Congratulations #{winner}!"
   else
     puts "Cat's Game!"
   end
 end
 
-
-  
 end
